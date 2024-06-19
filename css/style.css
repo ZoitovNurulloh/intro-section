@@ -84,6 +84,19 @@ img {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+/* LOGO */
+.logo {
+  display: block;
+  margin-right: 3.875rem;
+}
+
+.logo__img {
+  display: block;
+  width: 5.1875rem;
+  height: 1.6875rem;
+}
+
+
 
 
 /* VISUALLY-HIDDEN */
