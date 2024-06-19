@@ -97,6 +97,32 @@ img {
 }
 
 
+/* BUTTONS */
+.btn {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  width: 3.75rem;
+  height: 1rem;
+  color: var(--grey);
+}
+
+.btn:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.btn:hover {
+  color: var(--dark);
+}
+
+.btn__register {
+  border: 1px solid var(--grey);
+  padding: 0.875rem 1.375rem;
+  border-radius: 1rem;
+}
+
+.btn__register:hover {
+  border: 1px solid var(--dark);
+}
 
 
 /* VISUALLY-HIDDEN */
