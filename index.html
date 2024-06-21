@@ -20,58 +20,57 @@
 
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__items">
-            <div class="nav__item">Features</div>
-            <svg class="nav__icon" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
-            <ul class="nav__features features">
-              <li class="features__item">
-                <img class="features__img" src="./img/icon-todo.svg" alt="Icon"
-                width="14" height="16">
-                <a href="#" class="features__link">Todo List</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Features</a>
+            <img class="nav__img" src="./img/icon-arrow-down.svg" alt="Icon arrow down">
+            <ul class="nav__dropdown dropdown">
+              <li class="dropdown__item">
+                <img src="./img/icon-todo.svg" alt="Icon"
+                width="14" height="16" class="dropdown__img">
+                <a href="" class="dropdown__link">Todo List</a>
               </li>
-              <li class="features__item">
-                <img class="features__img" src="./img/icon-calendar.svg" alt="Icon"
-                width="14" height="16">
-                <a href="#" class="features__link">Calendar</a>
+              <li class="dropdown__item">
+                <img src="./img/icon-calendar.svg" alt="Icon"
+                width="14" height="16" class="dropdown__img">
+                <a href="" class="dropdown__link">Calendar</a>
               </li>
-              <li class="features__item">
-                <img class="features__img" src="./img/icon-reminders.svg" alt="Icon"
-                width="14" height="16">
-                <a href="#" class="features__link">Reminders</a>
+              <li class="dropdown__item">
+                <img src="./img/icon-reminders.svg" alt="Icon"
+                width="14" height="16" class="dropdown__img">
+                <a href="" class="dropdown__link">Reminders</a>
               </li>
-              <li class="features__item">
-                <img class="features__img" src="./img/icon-planning.svg" alt="Icon"
-                width="14" height="16">
-                <a href="#" class="features__link">Planning</a>
+              <li class="dropdown__item">
+                <img src="./img/icon-planning.svg" alt="Icon"
+                width="14" height="16" class="dropdown__img">
+                <a href="" class="dropdown__link">Planning</a>
               </li>
             </ul>
           </li>
-
-          <li class="nav__items">
-            <div class="nav__item">Company</div>
-            <svg class="nav__icon" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
-            <ul class="nav__company features">
-              <li class="features__item">
-                <a href="#" class="features__link">History</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Company</a>
+            <img class="nav__img" src="./img/icon-arrow-down.svg" alt="Icon arrow down">
+            <ul class="nav__dropdown dropdown dropdown--company">
+              <li class="dropdown__item">
+                <a href="" class="dropdown__link">History</a>
               </li>
-              <li class="features__item">
-                <a href="#" class="features__link">Our Team</a>
+              <li class="dropdown__item">
+                <a href="" class="dropdown__link">Our time</a>
               </li>
-              <li class="features__item">
-                <a href="#" class="features__link">Blog</a>
+              <li class="dropdown__item">
+                <a href="" class="dropdown__link">Blog</a>
               </li>
-
             </ul>
           </li>
-
-          <li class="nav__items">
-            <a href="#" class="nav__item">Careers</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Careers</a>
           </li>
-          <li class="nav__items">
-            <a href="#" class="nav__item">About</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
           </li>
         </ul>
       </nav>
+
+      <button class="header__toggler" type="button" aria-label="Menu"></button>
 
       <div class="header__buttons">
         <a href="#" class="btn btn__login">Login</a>
