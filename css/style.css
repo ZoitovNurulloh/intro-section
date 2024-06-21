@@ -170,6 +170,8 @@ input:-webkit-autofill:focus {
   align-items: center;
 }
 
+
+/* NAV */
 .nav {
   margin-right: auto;
 }
@@ -179,79 +181,81 @@ input:-webkit-autofill:focus {
   align-items: center;
 }
 
-.nav__items {
+.nav__item {
   position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
 }
 
-.nav__items:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 2.5rem;
 }
 
-.nav__item {
-  margin-right: 0.625rem;
+.nav__link {
   font-size: 0.875rem;
   line-height: 1rem;
   color: var(--grey);
+  transition: color 0.5s ease;
+  margin-right: 0.5rem;
 }
 
-.nav__item:hover {
+.nav__link:hover {
+  color: var(--dark);
+}
+
+.nav__img {
+  transition: transform 0.7s ease;
+  transform: rotate(0deg);
+}
+
+.nav__item:hover .nav__img {
   color:var(--dark);
-}
-
-
-.nav__items:hover .nav__icon {
   transform: rotate(180deg);
-  color:var(--dark);
+  transition: transform 0.7s ease;
 }
 
-.nav__company {
-  position: absolute;
-  min-width: 7.25rem;
-  top: 2.5rem;
+.dropdown {
+  display: none;
 }
 
-.nav__features {
-  min-width: 9.625rem;
-  position: absolute;
-  top: 2.5rem;
-  right: 0;
-}
-
-.features {
-  border-radius: 0.625rem;
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
-  padding: 1.5rem;
-}
-
-.features__item {
+.dropdown__item {
   display: flex;
   align-items: center;
 }
 
-.features__item:not(:last-child) {
+.dropdown__item:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.features__img {
+.dropdown__img {
   margin-right: 1rem;
-  width: 0.875rem;
-  height: 1rem;
+
 }
 
-.features__link {
-  display: block;
+.dropdown__link {
   font-size: 0.875rem;
   line-height: 1rem;
   color: var(--grey);
+  white-space: no-wrap;
 }
 
-.features__link:hover {
+.dropdown__link:hover {
   color: var(--dark);
 }
 
+.dropdown--company {
+  left: 0;
+  width: 116px;
+}
+
+.nav__item:hover .dropdown {
+  display: block;
+  width: 9.625rem;
+  position: absolute;
+  border-radius: 0.625rem;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  right: 0;
+  z-index: 100;
+}
 
 
 /* MAIN-CONTENT */
